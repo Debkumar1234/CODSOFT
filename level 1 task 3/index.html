@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EazyCalc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>EazyCalc</h1>
+    <div class="box">
+        <div class="display" id="display">0</div>
+        <div class="row">
+            <button class=" plus" onclick="appendNumber('+')">+</button>
+            <button class=" sub" onclick="appendNumber('-')">-</button>
+            <button class=" c" onclick="clearScreen()">C</button>
+            <button class="del" onclick="deleteLast()">DEL</button>
+        </div>
+        <div class="row">
+            <button class=" one" onclick="appendNumber('1')">1</button>
+            <button class=" two" onclick="appendNumber('2')">2</button>
+            <button class=" three" onclick="appendNumber('3')">3</button>
+            <button class=" mul" onclick="appendNumber('*')">*</button>
+
+        </div>
+        <div class="row">
+            <button class=" four" onclick="appendNumber('4')">4</button>
+            <button class=" five" onclick="appendNumber('5')">5</button>
+            <button class=" six" onclick="appendNumber('6')">6</button>
+            <button class=" div" onclick="appendNumber('/')">/</button>
+        </div>
+        <div class="row">
+            <button class=" seven" onclick="appendNumber('7')">7</button>
+            <button class=" eight" onclick="appendNumber('8')">8</button>
+            <button class=" nine" onclick="appendNumber('9')">9</button>
+            <button class=" zero" onclick="appendNumber('00')">00</button>
+        </div>
+        <div class="row">
+            <button class=" equal" onclick="calculateResult()" style="width:54%;">=</button>
+            <button class=" zero" onclick="appendNumber('0')">0</button>
+            <button class=" dot" onclick="appendNumber('.')" style="font-size: 3.5rem; padding-bottom: 1.2rem ;">.</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
